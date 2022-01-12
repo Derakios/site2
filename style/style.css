@@ -1,0 +1,280 @@
+/* definition image de fond et police par d�faut */
+html {
+font-size: 100%;
+margin:0;
+padding:0;
+}
+
+body {
+color:#000;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size:14px;
+background:#fff;
+margin:0;
+padding:0;
+}
+
+/* Espace reserver au menu */
+#menu_top {
+background-color:#036;
+width:800px;
+height:40px;
+margin:0;
+padding:0;
+}
+
+#gauche{
+float:left;
+}
+
+.validatorAlbum {
+    margin-top: -43px;
+}
+
+.validatorIndex {
+    margin-top: -43px;
+}
+
+#droit {
+float:right;
+}
+
+#menu_top ul {
+list-style:none;
+margin:0;
+padding:10px 5px;
+}
+
+#menu_top li {
+display:inline;
+padding:0 8px;
+}
+
+#menu_top a {
+color:#fff;
+text-decoration:none;
+border:1px solid #036;
+padding:6px 10px;
+}
+
+#menu_top a:hover {
+color:#fff;
+background-color:#903;
+border:1px solid #fff;
+}
+
+#actif a {
+color:#fff;
+background-color:#903;
+border:1px solid #07b;
+}
+
+#pied_de_page {
+ background-color: #888888;
+ width: 800px;
+ height: 50px;
+ margin-top: 44.5em;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    padding-top: 9px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.line1 {
+    height: 250px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line1bis { /* Pour coller la dernière ligne de photo au footer */
+    height: 250px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -14px;
+}
+
+.photo1 {
+    margin-right: 40px;
+    border: 1px solid #336699;
+    
+}
+
+.titlePhoto {
+    color: white;
+    background-color: #336699;
+    text-align: center;
+}
+
+.insidePhoto {
+    padding: 0 20px 40px 20px;
+    margin-top: 15px;
+    background-color: white;
+    width: 100px;
+}
+
+.photos {
+    width: 100px;
+}
+
+.textPhoto {
+    text-align: center;
+    margin-top: 0;
+}
+
+.photosVenus {
+    width: 100px;
+}
+
+.insidePhoto2 {
+    padding: 0 20px 79.7px 20px;
+    margin-top: 15px;
+    background-color: white;
+    width: 100px;
+}
+
+/* Unique padding bottom for some photos */
+
+.insidePhJup2 {
+    padding-bottom: 45px;
+}
+
+.insidePhMer1 {
+    padding-bottom: 7px;
+}
+
+.insidePhMer2 {
+    padding-bottom: 50px;
+}
+
+.insidePhNep2 {
+    padding-bottom: 48px;
+}
+
+.insidePhSat2 {
+    padding-bottom: 52px;
+}
+
+.insidePhVen2 {
+    padding-bottom: 73px;
+}
+
+.insidePhUra {
+    padding-bottom: 51px;
+}
+
+.insidePhLune {
+    padding-bottom: 51px;
+}
+
+/* Pied de page Photos */
+#pied_de_pagePh {
+    background-color: #888888;
+    width: 800px;
+    height: 50px;
+}
+
+/* Page téléchargement */
+
+.titleDown {
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.downloadDiv {
+    width: 41%;
+}
+
+.downloadExe {
+    text-decoration: none;
+    color: #0000FF;
+}
+
+.textDownload {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#pied_de_pageDownload {
+    background-color: #888888;
+    width: 800px;
+    height: 50px;
+    margin-top: 30.2em;
+}
+
+.validatorTelechargement {
+    margin-top: -43px;
+}
+
+/* Page contact */
+
+.formContact {
+    margin-left: 10px;
+}
+
+.formName {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.formFName {
+    margin-bottom: 20px;
+}
+
+.formMail {
+    margin-bottom: 20px;
+}
+
+.formMsg {
+    margin-bottom: 30px;
+}
+
+.msgContact {
+    height: 100px;
+    width: 400px;
+    resize: none;
+}
+
+#pied_de_pageContact {
+    background-color: #888888;
+    width: 800px;
+    height: 50px;
+    margin-top: 29.2em;
+}
+
+.validatorContact {
+    margin-top: -43px;
+}
+
+/* Page plan du site */
+
+.divPlan {
+    margin-left: 10px;
+}
+
+.planLink {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+.descriptionLink {
+    margin-top: 0;
+}
+
+#pied_de_pagePlan {
+    background-color: #888888;
+    width: 800px;
+    height: 50px;
+    margin-top: 34.2em;
+}
+
+.validatorPlan {
+    margin-top: -43px;
+}
