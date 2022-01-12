@@ -14,10 +14,14 @@ margin:0;
 padding:0;
 }
 
+.banniereimg {
+    width: 920px;
+}
+
 /* Espace reserver au menu */
 #menu_top {
 background-color:#036;
-width:800px;
+width:920px;
 height:40px;
 margin:0;
 padding:0;
@@ -25,6 +29,10 @@ padding:0;
 
 #gauche{
 float:left;
+}
+
+#corps {
+ margin-left: 10px;
 }
 
 .validatorAlbum {
@@ -73,7 +81,7 @@ border:1px solid #07b;
  background-color: #888888;
  width: 800px;
  height: 50px;
- margin-top: 44.5em;
+ margin-top: 2.5em;
 }
 
 .copyright {
@@ -278,3 +286,45 @@ border:1px solid #07b;
 .validatorPlan {
     margin-top: -43px;
 }
+
+/*
+  We include some minimal custom CSS to make the playlist UI look good
+  in this context.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .info {
+    background-color: #eee;
+    border: thin solid #333;
+    border-radius: 3px;
+    margin: 0 0 20px;
+    padding: 0 5px;
+  }
+  
+  .player-container {
+    background: #1a1a1a;
+    overflow: auto;
+    width: 900px;
+    margin: 0 0 20px;
+  }
+  
+  .video-js {
+    float: left;
+  }
+  
+  .vjs-playlist,
+  .my-custom-class,
+  #my-custom-element {
+    float: left;
+    width: 300px;
+  }
+  
+  .vjs-playlist.vjs-playlist-horizontal {
+    float: none;
+    height: 120px;
+    width: 600px;
+  }
+  

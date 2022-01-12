@@ -7,12 +7,14 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>Photos et téléchargements</title>	
 		<link rel="stylesheet" type="text/css" href="style/style.css" />
+		<link href="style/video-js.css" rel="stylesheet">
+  		<link href="style/videojs-playlist-ui.css" rel="stylesheet">
 	</head>
 
 	<body>
 			<!--Espace réserver à l'entête -->
 		<div class="banniere">
-			<img src="images/banniere.png" alt="Bannière du site"/>
+			<img class="banniereimg" src="images/banniere.png" alt="Bannière du site"/>
 		</div>
 			<!-- Espace réserver au menu -->
 		<div id="menu_top">
@@ -20,6 +22,9 @@
 			<li id="actif"><a href="index.html" title="Bienvenue" >Accueil</a></li>
 			<li><a href="album.html" title="PHOTOS" >Photos</a></li>
 			<li><a href="telechargement.html" title="Telechargement" >Telechargements</a></li>
+			<li><a href="video.html" title="Videos" >Vidéos</a></li>
+            <li><a href="compte.html" title="Compte" >Mon compte</a></li>
+            <li><a href="carte_ciel.html" title="Carte_du_ciel" >Carte du ciel</a></li>
 			<li><a href="contact.html" title="Pour me joindre" >Contact</a></li>
 			<li><a href="plan.html" title="plan du site" >Plan du site</a></li>
 		</ul>
@@ -30,10 +35,48 @@
 		<div id="corps">
 		<br/>
 			<p>Bienvenue sur le site perso de technologies Web!</p>
-			<p>Au programme, des photos, des téléchargements ainsi qu'un formulaire si vous voulez me contacter
-				<br/>
-				Bon courage à toutes et à tous!
-			</p>
+			
+			<!-- Géolocalisation de l’ISS -->
+			<iframe src="https://www.lizard-tail.com/isana/tracking/" title="Géolocalisation de l'ISS" scrolling= "no" style= "border : 0px
+			none transparent ;" frameborder="no" width="920" height="450"> </iframe>
+
+			<br>
+
+			<iframe src="https://ustream.tv/embed/17074538?html5ui=1&autoplay=true" allowfullscreen width="457px" height="300px"
+			webkitallowfullscreen frameborder="0" style="border: 0 none transparent;" title="Live Stream Feed"></iframe>
+
+			<iframe src="https://ustream.tv/embed/9408562?html5ui=1&autoplay=true" scrolling="no" allowfullscreen width="458px" height="300px"
+			webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+
+			<br>
+
+			<div class="player-container">
+				<video
+				  id="video"
+				  class="video-js"
+				  height="300"
+				  width="600"
+				  controls>
+				  <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+				  <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+				</video>
+			
+				<div class="vjs-playlist">
+				  <!--
+					The contents of this element will be filled based on the
+					currently loaded playlist
+				  -->
+				</div>
+			  </div>
+			
+			  <script src="js/video.js"></script>
+			  <script src="js/videojs-playlist.js"></script>
+			  <script src="js/videojs-playlist-ui.js"></script>
+			  <script src="js/videoscript.js"></script>
+
+			  <br>
+
+			  <iframe src="https://esamultimedia.esa.int/multimedia/virtual-tour-iss/" scrolling="no" style="border: 0px none transparent;" allowfullscreen webkitallowfullscreen frameborder="0" width="920" height="450"> </iframe>
 		</div>
 		
 		
