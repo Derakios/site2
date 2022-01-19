@@ -28,7 +28,7 @@
             </ul>
 		</div>
 		
-        <form class="formContact" action="submit">
+        <form class="formContact" name="form" method="POST" enctype="text/plain" onsubmit="return validateContact()">
             <div class="formName">
                 <label for="name">Votre Nom : </label>
                 <input type="text" id="name" name="Nom"/>
@@ -42,11 +42,11 @@
                 <input type="text" id="mail" name="EMail"/>
             </div>
             <div class="formMsg">
-                <textarea class="msgContact" rows="10" cols="50"></textarea>
+                <textarea class="msgContact" rows="10" cols="50" name="msgtext"></textarea>
             </div>
 
-            <input type="button" value="Rétablir"/>
-            <input type="button" value="Envoyer"/>
+            <input type="reset" value="Rétablir"/>
+            <input type="submit" value="Envoyer"/>
         </form>
 
 		<div id="pied_de_pageContact">
@@ -62,6 +62,7 @@
                 </p>
 			</div>
 		</div>
+        <script src="js/script.js"></script>
 	</body>
 
 
