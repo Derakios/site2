@@ -398,12 +398,7 @@ body {
     display: flex;
 }
 
-.iframevid {
+.textvid iframe {
+    width: 80%;
     border: none;
-    padding-left: 50px;
-    padding-right: 20px;
-}
-
-.pvid {
-    padding-left: 50px;
 }
