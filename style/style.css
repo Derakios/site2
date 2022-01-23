@@ -376,4 +376,34 @@ body {
     height: 50px;
     margin-top: 20em;
 }
-  
+ 
+
+/* Page vidéos */
+
+.listevideo {
+    width: 905px;
+}
+
+.lignevid {
+    margin-top: 30px;
+    display: flex;
+}
+
+.textvid {
+    display: block;
+    margin-top: 20px;
+}
+
+.lignevid2 {
+    display: flex;
+}
+
+.iframevid {
+    border: none;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.pvid {
+    padding-left: 50px;
+}
