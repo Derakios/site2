@@ -15,13 +15,14 @@ padding:0;
 }
 
 .banniereimg {
-    width: 920px;
+    width: 100%;
+    height: 115px;
 }
 
 /* Espace reserver au menu */
 #menu_top {
 background-color:#036;
-width:920px;
+width:100%;
 height:40px;
 margin:0;
 padding:0;
@@ -401,4 +402,17 @@ body {
 .textvid iframe {
     width: 80%;
     border: none;
+}
+
+
+/* ------------ BOOTSTRAP CSS ------------- */
+.nav-item a {
+    transition: all 0.7s ease 0s;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.nav-item a:hover {
+    box-shadow: inset 130px 0 0 0 rgb(219, 215, 215);
+    color: #212529 !important;
 }
