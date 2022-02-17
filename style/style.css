@@ -410,8 +410,6 @@ body {
     transition: all 0.7s ease 0s;
     border-radius: 10px;
     margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .nav-item a:hover {
@@ -427,4 +425,8 @@ body {
 
 .copyrightV {
     margin-bottom: 0;
+}
+
+.navbar-toggler {
+    margin-bottom: 10px;
 }
