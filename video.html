@@ -7,6 +7,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>Photos et téléchargements</title>	
 		<link rel="stylesheet" type="text/css" href="style/style.css" />
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="style/bootstrap.css">
 	</head>
 
 	<body>
@@ -14,19 +17,50 @@
 		<div class="banniere">
 			<img class="banniereimg" src="images/banniere.png" alt="Bannière du site"/>
 		</div>
-			<!-- Espace réserver au menu -->
-		<div id="menu_top">
-		<ul>
-			<li><a href="index.html" title="Bienvenue" >Accueil</a></li>
-			<li><a href="album.html" title="PHOTOS" >Photos</a></li>
-			<li><a href="telechargement.html" title="Telechargement" >Telechargements</a></li>
-            <li id="actif"><a href="video.html" title="Videos" >Vidéos</a></li>
-            <li><a href="compte.html" title="Compte" >Mon compte</a></li>
-            <li><a href="carte_ciel.html" title="Carte_du_ciel" >Carte du ciel</a></li>
-			<li><a href="contact.html" title="Pour me joindre" >Contact</a></li>
-			<li><a href="plan.html" title="plan du site" >Plan du site</a></li>
-		</ul>
-		</div>
+		
+		<!-- Espace réserver au menu -->
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a href="index.html" title="Bienvenue" class="nav-link active">Accueil</a>
+					</li>
+					&nbsp;
+					<li class="nav-item active">
+						<a href="album.html" title="PHOTOS" class="nav-link">Photos</a>
+					</li>
+					&nbsp;
+					<li class="nav-item">
+						<a href="telechargement.html" title="Telechargement" class="nav-link">Telechargements</a>
+					</li>
+					&nbsp;
+					<li class="nav-item">
+						<a href="video.html" title="Videos" class="nav-link">Vidéos</a>
+					</li>
+					&nbsp;
+					<li class="nav-item">
+						<a href="compte.html" title="Compte" class="nav-link">Mon compte</a>
+					</li>
+					&nbsp;
+					<li class="nav-item">
+						<a href="carte_ciel.html" title="Carte_du_ciel" class="nav-link">Carte du ciel</a>
+					</li>
+					&nbsp;
+					<li class="nav-item">
+						<a href="contact.html" title="Pour me joindre" class="nav-link">Contact</a>
+					</li>
+					&nbsp;
+					<li class="nav-item">
+						<a href="plan.html" title="plan du site" class="nav-link">Plan du site</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
 		<div class="main">
 			<div class="listevideo">
@@ -89,6 +123,8 @@
 				</p>
 			</div>
 		</div>
+
+		<script src="js/bootstrap.js"></script>
 	</body>
 
 
