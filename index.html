@@ -84,12 +84,24 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img src="images/imageslide1.jpg" class="d-block w-100 h-auto" alt="ISS au dessus de la terre">
+					<div class="carousel-caption d-none d-md-block">
+						<h1>ISS</h1>
+						<h5>Image de l'ISS au dessus de la Terre</h5>
+					</div>
 				</div>
 				<div class="carousel-item">
 					<img src="images/imageslide2.jpg" class="d-block w-100 h-auto" alt="vue de la terre depuis la lune">
+					<div class="carousel-caption d-none d-md-block">
+						<h1>Lune</h1>
+						<h5>Vue de la terre depuis la Lune</h5>
+					</div>
 				</div>
 				<div class="carousel-item">
 					<img src="images/imageslide3.jpg" class="d-block w-100 h-auto" alt="robot sur mars">
+					<div class="carousel-caption d-none d-md-block">
+						<h1>Mars</h1>
+						<h5>Le robot Perseverance déployé sur Mars</h5>
+					</div>
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -103,67 +115,100 @@
 		</div>
 		
 		<!-- Géolocalisation de l’ISS -->
-		<iframe src="https://www.lizard-tail.com/isana/tracking/" title="Géolocalisation de l'ISS" scrolling= "no" style= "border : 0px
-		none transparent ;" frameborder="no" width="920" height="450"> </iframe>
+
+		<div class="container-fluid">
+			<div class="row">
+				<iframe src="https://www.lizard-tail.com/isana/tracking/" title="Géolocalisation de l'ISS" scrolling= "no" style= "border : 0px
+				none transparent ; padding: 0;" frameborder="no" width="920" height="450"> </iframe>
+		
+				<br>
+		
+				<iframe src="https://ustream.tv/embed/17074538?html5ui=1&autoplay=true" allowfullscreen width="457px" height="300px"
+				webkitallowfullscreen frameborder="0" style="border: 0 none transparent; padding: 0;" title="Live Stream Feed"></iframe>
+		
+				<iframe src="https://ustream.tv/embed/9408562?html5ui=1&autoplay=true" scrolling="no" allowfullscreen width="458px" height="300px"
+				webkitallowfullscreen frameborder="0" style="border: 0 none transparent; padding: 0;"></iframe></div>	
+		</div>
+
+		<br>
+		<br>
+
+		<div class="container-fluid">
+			<div class="row">
+				<iframe src="https://esamultimedia.esa.int/multimedia/virtual-tour-iss/" scrolling="no" style="border: 0px none transparent; padding: 0;" allowfullscreen webkitallowfullscreen frameborder="0" width="920" height="450"> </iframe>
+			</div>
+		</div>
 
 		<br>
 
-		<iframe src="https://ustream.tv/embed/17074538?html5ui=1&autoplay=true" allowfullscreen width="457px" height="300px"
-		webkitallowfullscreen frameborder="0" style="border: 0 none transparent;" title="Live Stream Feed"></iframe>
-
-		<iframe src="https://ustream.tv/embed/9408562?html5ui=1&autoplay=true" scrolling="no" allowfullscreen width="458px" height="300px"
-		webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
-
-		<br>
-
-		<div class="player-container">
-			<video
-				id="video"
-				class="video-js"
-				height="300"
-				width="600"
-				controls>
-				<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-				<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
-			</video>
-		
-			<div class="vjs-playlist">
-				<!--
-				The contents of this element will be filled based on the
-				currently loaded playlist
-				-->
+		<div class="container d-flex justify-content-center">
+			<div class="player-container">
+				<video
+					id="video"
+					class="video-js"
+					height="300"
+					width="600"
+					controls>
+					<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+					<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+				</video>
+			
+				<div class="vjs-playlist">
+					<!--
+					The contents of this element will be filled based on the
+					currently loaded playlist
+					-->
+				</div>
 			</div>
-			</div>
-		
-			<script src="js/video.js"></script>
-			<script src="js/videojs-playlist.js"></script>
-			<script src="js/videojs-playlist-ui.js"></script>
-			<script src="js/videoscript.js"></script>
-
-			<br>
-
-			<iframe src="https://esamultimedia.esa.int/multimedia/virtual-tour-iss/" scrolling="no" style="border: 0px none transparent;" allowfullscreen webkitallowfullscreen frameborder="0" width="920" height="450"> </iframe>
-	
+			
+		</div>
+			
 
 		<!-- Footer -->
-		<footer class="bg-dark text-center text-white">
-			<div class="container p-1 vertical-center">
+		<div class="container-fluid footer bg-dark text-center text-white">
+			<div class="container d-flex justify-content-center py-2">
+				<ul class="nav flex-column flex-sm-row footernav">
+					<li class="nav-item">
+						<a class="nav-link afootnav active" href="index.html">Accueil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link afootnav" href="album.html">Photos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link afootnav" href="telechargement.html">Telechargements</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link afootnav" href="video.html">Vidéos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link afootnav" href="compte.html">Mon compte</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link afootnav" href="carte_ciel.html">Carte du ciel</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link afootnav" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link afootnav" href="plan.html">Plan du site</a>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="spacer"></div>
+			<div class="text-center p-1 container-fluid" style="background-color: rgba(0, 0, 0, 0.2);">
 				<p class="copyrightV">
 					Copyright Technologies Web - 2019
 					<br/>
 					VANNES 56000
 				</p>
 			</div>
-		
-			<div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
-				
-					<a href="http://validator.w3.org/check?uri=referer">
-						<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
-					</a>
-			</div>
-		</footer>
-		<!-- Footer -->
+		</div>
 
+		<script src="js/video.js"></script>
+		<script src="js/videojs-playlist.js"></script>
+		<script src="js/videojs-playlist-ui.js"></script>
+		<script src="js/videoscript.js"></script>
 		<script src="js/bootstrap.js"></script>
 	</body>
 
