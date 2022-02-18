@@ -12,8 +12,18 @@
 		<link rel="stylesheet" href="style/bootstrap.css">
     </head>
 
+	
+
     <body class="d-flex flex-column min-vh-100">
 
+		<button id="btndis" type="button" class="btn btn-sm btn-primary" onclick="closeJup()">Fermer</button>
+		<img id="imgJup2" class="imgonclick" src="images/jupiter2.jpg">
+		<img id="imgMerc2" class="imgonclick" src="images/mercure2.jpg">
+		<img id="imgNep2" class="imgonclick" src="images/neptune2.jpg">
+		<img id="imgSat2" class="imgonclick" src="images/saturne2.jpg">
+		<img id="imgVen2" class="imgonclick" src="images/venus2.jpg">
+
+		<div id="bodyid">
 		<!-- Espace réserver au menu -->
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
@@ -24,11 +34,11 @@
 			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a href="index.html" title="Bienvenue" class="nav-link active">Accueil</a>
+						<a href="index.html" title="Bienvenue" class="nav-link">Accueil</a>
 					</li>
 					&nbsp;
 					<li class="nav-item active">
-						<a href="album.html" title="PHOTOS" class="nav-link">Photos</a>
+						<a href="album.html" title="PHOTOS" class="nav-link active">Photos</a>
 					</li>
 					&nbsp;
 					<li class="nav-item">
@@ -58,117 +68,122 @@
 			</div>
 		</nav>
 
-		<!--Ligne 1-->
-        <div class="line1">
-			<div class="photo1">
-				<div class="titlePhoto">photo #1</div>
-				<div class="insidePhoto">
-					<a href="images/jupiter.jpg"><img class="photos" src="images/jupiter.jpg" alt="Photo de jupiter"/></a>
-					<p class="textPhoto">Jupiter</p>
-				</div>
-			</div>
+			<div class="container">
 
-			<div class="photo1">
-				<div class="titlePhoto">photo #2</div>
-				<div class="insidePhoto insidePhJup2">
-					<a href="images/jupiter2.jpg"><img class="photos" src="images/jupiter2.jpg" alt="Photo de jupiter"/></a>
-					<p class="textPhoto">Jupiter</p>
-				</div>
-			</div>
+				<div class="row">
 
-			<div class="photo1">
-				<div class="titlePhoto">photo #3</div>
-				<div class="insidePhoto insidePhMer1">
-					<a href="images/mercure.jpg"><img class="photos" src="images/mercure.jpg" alt="Photo de mercure"/></a>
-					<p class="textPhoto">Mercure</p>
-				</div>
-			</div>
+				  <div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+					  <img class="card-img-top" alt="Jupiter" src="images/jupiter.jpg" data-holder-rendered="true">
+					  <div class="card-body">
+						<p class="card-text">Jupiter est la cinquième planète du Système solaire par ordre d'éloignement au Soleil, et la plus grande par la taille et la masse devant Saturne, qui est comme elle une planète géant gazeuse.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary" onclick="appearimageJup()">Plus</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
 
-			<div class="photo1">
-				<div class="titlePhoto">photo #4</div>
-				<div class="insidePhoto insidePhMer2">
-					<a href="images/mercure2.jpg"><img class="photos" src="images/mercure2.jpg" alt="Photo de mercure"/></a>
-					<p class="textPhoto">Mercure</p>
-				</div>
-			</div>
-		</div>
+				  <div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" alt="Mercure" src="images/mercure.jpg" data-holder-rendered="true">
+						<div class="card-body">
+						<p class="card-text">Mercure est la planète la plus proche du Soleil et la moins massive du Système solaire.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary" onclick="appearimageMer()">Plus</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
 
-		<!--Ligne 2-->
-		<div class="line1">
-			<div class="photo1">
-				<div class="titlePhoto">photo #5</div>
-				<div class="insidePhoto">
-					<a href="images/neptune.jpg"><img class="photos" src="images/neptune.jpg" alt="Photo de neptune"/></a>
-					<p class="textPhoto">Neptune</p>
-				</div>
-			</div>
+				  <div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" alt="Neptune" src="images/neptune.jpg" data-holder-rendered="true">
+						<div class="card-body">
+						<p class="card-text">Neptune est la huitième planète par ordre d'éloignement au Soleil et la plus éloignée connue du Système solaire.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary" onclick="appearimageNep()">Plus</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+	  
+				  <div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" alt="Saturne" src="images/saturne.jpg" data-holder-rendered="true">
+						<div class="card-body">
+						<p class="card-text">Saturne est la sixième planète du Système solaire par ordre d'éloignement au Soleil, et la deuxième plus grande par la taille et la masse après Jupiter, qui est comme elle une géante gazeuse.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary" onclick="appearimageSat()">Plus</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
 
-			<div class="photo1">
-				<div class="titlePhoto">photo #6</div>
-				<div class="insidePhoto insidePhNep2">
-					<a href="images/neptune2.jpg"><img class="photos" src="images/neptune2.jpg" alt="Photo de neptune"/></a>
-					<p class="textPhoto">Neptune</p>
-				</div>
-			</div>
+				  <div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" alt="Venus" src="images/venus.jpg" data-holder-rendered="true">
+						<div class="card-body">
+						<p class="card-text">Venus est la deuxième planète du Système solaire par ordre d'éloignement au Soleil. Elle subit un rayonnement solaire presque deux fois plus intense que la Terre.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary" onclick="appearimageVen()">Plus</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
 
-			<div class="photo1">
-				<div class="titlePhoto">photo #7</div>
-				<div class="insidePhoto2">
-					<a href="images/saturne.jpg"><img class="photosVenus" src="images/saturne.jpg" alt="Photo de saturne"/></a>
-					<p class="textPhoto">Saturne</p>
-				</div>
-			</div>
+				  <div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" alt="Uranus" src="images/uranus.gif" data-holder-rendered="true">
+						<div class="card-body">
+						<p class="card-text">Uranus est la septième planète du Système solaire par odre d'aloignement au Soleil. Elle est qalifiée de géante de glace car elle est largement composée d'eau, d'ammoniac et de méthane sous forme solide.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						</div>
+					  </div>
+					</div>
+				  </div>
 
-			<div class="photo1">
-				<div class="titlePhoto">photo #8</div>
-				<div class="insidePhoto insidePhSat2">
-					<a href="images/saturne2.jpg"><img class="photos" src="images/saturne2.jpg" alt="Photo de saturne"/></a>
-					<p class="textPhoto">Saturne</p>
+				  <div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" alt="Pluton" src="images/pluton.jpg" data-holder-rendered="true">
+						<div class="card-body">
+						<p class="card-text">Pluton est une lanète naine. La plus volumineuse connue dans le Système solaire et la deuxième en ce qui concerne sa masse (après Eris).</p>
+						<div class="d-flex justify-content-between align-items-center">
+						</div>
+					  </div>
+					</div>
+				  </div>
+	  
+				  <div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" alt="Lune" src="images/lune.jpg" data-holder-rendered="true">
+						<div class="card-body">
+						<p class="card-text">La lune est l'unique satellite naturel de la Terre et le cinquième plus grand satellite.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  
 				</div>
-			</div>
-		</div>
-
-		<!--Ligne 3-->
-		<div class="line1bis">
-			<div class="photo1">
-				<div class="titlePhoto">photo #9</div>
-				<div class="insidePhoto">
-					<a href="images/venus2.jpg"><img class="photos" src="images/venus2.jpg" alt="Photo de venus"/></a>
-					<p class="textPhoto">Venus</p>
-				</div>
-			</div>
-
-			<div class="photo1">
-				<div class="titlePhoto">photo #10</div>
-				<div class="insidePhoto insidePhVen2">
-					<a href="images/venus.jpg"><img class="photos" src="images/venus.jpg" alt="Photo de venus"/></a>
-					<p class="textPhoto">Venus</p>
-				</div>
-			</div>
-
-			<div class="photo1">
-				<div class="titlePhoto">photo #11</div>
-				<div class="insidePhoto insidePhUra">
-					<a href="images/uranus.gif"><img class="photos" src="images/uranus.gif" alt="Photo de uranus"/></a>
-					<p class="textPhoto">Uranus</p>
-				</div>
-			</div>
-
-			<div class="photo1">
-				<div class="titlePhoto">photo #12</div>
-				<div class="insidePhoto insidePhLune">
-					<a href="images/lune.jpg"><img class="photos" src="images/lune.jpg" alt="Photo de la lune"/></a>
-					<p class="textPhoto">La Lune</p>
-				</div>
-			</div>
-		</div>
+			  </div>
 
 		<!-- Footer -->
 		<div class="container-fluid footer bg-dark text-center text-white mt-auto">
 			<div class="container d-flex justify-content-center py-2">
 				<ul class="nav flex-column flex-sm-row footernav">
 					<li class="nav-item">
-						<a class="nav-link afootnav active" href="index.html">Accueil</a>
+						<a class="nav-link afootnav" href="index.html">Accueil</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link afootnav" href="album.html">Photos</a>
@@ -203,8 +218,10 @@
 				</p>
 			</div>
 		</div>
+	</div>
 		<!-- Footer -->
 		
+		<script src="js/script.js"></script>
 		<script src="js/bootstrap.js"></script>
     </body>
 </html>

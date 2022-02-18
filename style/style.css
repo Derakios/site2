@@ -438,3 +438,39 @@ body {
 .afootnav {
     color: #6c757d !important;
 }
+
+.imgonclick {
+    position: fixed;
+    z-index: 999;
+    top: 40%;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+
+#btndis {
+    position: fixed;
+    z-index: 999;
+    top: 37%;
+    left: 40%;
+    display: none;
+}
+
+@media (max-width: 673px) {
+    .nav-item a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 642px) {
+    .nav-item a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 578px) {
+    .nav-item a {
+        font-size: 10px;
+    }
+}
