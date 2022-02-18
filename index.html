@@ -17,9 +17,7 @@
 
 	<body>
 			<!--Espace réserver à l'entête -->
-		<div class="banniere">
-			<img class="banniereimg" src="images/banniere.png" alt="Bannière du site"/>
-		</div>
+		
 			<!-- Espace réserver au menu -->
 		<!-- <div id="menu_top">
 			<ul class="nav justify-content-center">
@@ -77,54 +75,75 @@
 			</div>
 		</nav>
 
-		<br/>
-		
-		<div id="corps">
-		<br/>
-			<p>Bienvenue sur le site perso de technologies Web!</p>
-			
-			<!-- Géolocalisation de l’ISS -->
-			<iframe src="https://www.lizard-tail.com/isana/tracking/" title="Géolocalisation de l'ISS" scrolling= "no" style= "border : 0px
-			none transparent ;" frameborder="no" width="920" height="450"> </iframe>
-
-			<br>
-
-			<iframe src="https://ustream.tv/embed/17074538?html5ui=1&autoplay=true" allowfullscreen width="457px" height="300px"
-			webkitallowfullscreen frameborder="0" style="border: 0 none transparent;" title="Live Stream Feed"></iframe>
-
-			<iframe src="https://ustream.tv/embed/9408562?html5ui=1&autoplay=true" scrolling="no" allowfullscreen width="458px" height="300px"
-			webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
-
-			<br>
-
-			<div class="player-container">
-				<video
-				  id="video"
-				  class="video-js"
-				  height="300"
-				  width="600"
-				  controls>
-				  <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-				  <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
-				</video>
-			
-				<div class="vjs-playlist">
-				  <!--
-					The contents of this element will be filled based on the
-					currently loaded playlist
-				  -->
-				</div>
+		<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			  </div>
-			
-			  <script src="js/video.js"></script>
-			  <script src="js/videojs-playlist.js"></script>
-			  <script src="js/videojs-playlist-ui.js"></script>
-			  <script src="js/videoscript.js"></script>
-
-			  <br>
-
-			  <iframe src="https://esamultimedia.esa.int/multimedia/virtual-tour-iss/" scrolling="no" style="border: 0px none transparent;" allowfullscreen webkitallowfullscreen frameborder="0" width="920" height="450"> </iframe>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/imageslide1.jpg" class="d-block w-100 h-auto" alt="ISS au dessus de la terre">
+				</div>
+				<div class="carousel-item">
+					<img src="images/imageslide2.jpg" class="d-block w-100 h-auto" alt="vue de la terre depuis la lune">
+				</div>
+				<div class="carousel-item">
+					<img src="images/imageslide3.jpg" class="d-block w-100 h-auto" alt="robot sur mars">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
+		
+		<!-- Géolocalisation de l’ISS -->
+		<iframe src="https://www.lizard-tail.com/isana/tracking/" title="Géolocalisation de l'ISS" scrolling= "no" style= "border : 0px
+		none transparent ;" frameborder="no" width="920" height="450"> </iframe>
+
+		<br>
+
+		<iframe src="https://ustream.tv/embed/17074538?html5ui=1&autoplay=true" allowfullscreen width="457px" height="300px"
+		webkitallowfullscreen frameborder="0" style="border: 0 none transparent;" title="Live Stream Feed"></iframe>
+
+		<iframe src="https://ustream.tv/embed/9408562?html5ui=1&autoplay=true" scrolling="no" allowfullscreen width="458px" height="300px"
+		webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+
+		<br>
+
+		<div class="player-container">
+			<video
+				id="video"
+				class="video-js"
+				height="300"
+				width="600"
+				controls>
+				<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+				<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+			</video>
+		
+			<div class="vjs-playlist">
+				<!--
+				The contents of this element will be filled based on the
+				currently loaded playlist
+				-->
+			</div>
+			</div>
+		
+			<script src="js/video.js"></script>
+			<script src="js/videojs-playlist.js"></script>
+			<script src="js/videojs-playlist-ui.js"></script>
+			<script src="js/videoscript.js"></script>
+
+			<br>
+
+			<iframe src="https://esamultimedia.esa.int/multimedia/virtual-tour-iss/" scrolling="no" style="border: 0px none transparent;" allowfullscreen webkitallowfullscreen frameborder="0" width="920" height="450"> </iframe>
+	
 
 		<!-- Footer -->
 		<footer class="bg-dark text-center text-white">

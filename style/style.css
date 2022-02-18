@@ -430,3 +430,7 @@ body {
 .navbar-toggler {
     margin-bottom: 10px;
 }
+
+.sliderHeight {
+    height: 870px;
+}
