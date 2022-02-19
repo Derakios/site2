@@ -36,64 +36,68 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
     
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a href="index.html" title="Bienvenue" class="nav-link">Accueil</a>
-                        </li>
-                        &nbsp;
-                        <li class="nav-item active">
-                            <a href="album.html" title="PHOTOS" class="nav-link">Photos</a>
-                        </li>
-                        &nbsp;
-                        <li class="nav-item">
-                            <a href="telechargement.html" title="Telechargement" class="nav-link">Telechargements</a>
-                        </li>
-                        &nbsp;
-                        <li class="nav-item">
-                            <a href="video.html" title="Videos" class="nav-link">Vidéos</a>
-                        </li>
-                        &nbsp;
-                        <li class="nav-item">
-                            <a href="compte.html" title="Compte" class="nav-link">Mon compte</a>
-                        </li>
-                        &nbsp;
-                        <li class="nav-item">
-                            <a href="carte_ciel.html" title="Carte_du_ciel" class="nav-link">Carte du ciel</a>
-                        </li>
-                        &nbsp;
-                        <li class="nav-item">
-                            <a href="contact.html" title="Pour me joindre" class="nav-link active">Contact</a>
-                        </li>
-                        &nbsp;
-                        <li class="nav-item">
-                            <a href="plan.html" title="plan du site" class="nav-link">Plan du site</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="index.html" title="Bienvenue" class="nav-link">Accueil</a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item active">
+                        <a href="album.html" title="PHOTOS" class="nav-link">Photos</a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item">
+                        <a href="telechargement.html" title="Telechargement" class="nav-link">Telechargements</a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item">
+                        <a href="video.html" title="Videos" class="nav-link">Vidéos</a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item">
+                        <a href="compte.html" title="Compte" class="nav-link">Mon compte</a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item">
+                        <a href="carte_ciel.html" title="Carte_du_ciel" class="nav-link">Carte du ciel</a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item">
+                        <a href="contact.html" title="Pour me joindre" class="nav-link active">Contact</a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item">
+                        <a href="plan.html" title="plan du site" class="nav-link">Plan du site</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 		
-        <form class="formContact" name="form" method="POST" enctype="text/plain" onsubmit="return validateContact()">
-            <div class="formName">
-                <label for="name">Votre Nom : </label>
-                <input type="text" id="name" name="Nom"/>
-            </div>
-            <div class="formFName">
-                <label for="firstname">Votre prénom : </label>
-                <input type="text" id="firstname" name="Prenom"/>
-            </div>
-            <div class="formMail">
-                <label for="mail">Votre Email : </label>
-                <input type="text" id="mail" name="EMail"/>
-            </div>
-            <div class="formMsg">
-                <textarea class="msgContact" rows="10" cols="50" name="msgtext"></textarea>
-            </div>
-
-            <input type="reset" value="Rétablir"/>
-            <input type="submit" value="Envoyer"/>
-        </form>
-
+        <div class="container col-md-12">
+            <form name="form" method="POST" enctype="text/plain" onsubmit="return validateContact()"></formnsubmit>
+                <div class="form-group mt-3">
+                  <label for="name">Votre nom : </label>
+                  <input type="text" class="form-control" name="Nom" id="name" placeholder="Doe">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="firstname">Votre prénom : </label>
+                    <input type="text" class="form-control" name="Prenom" id="firstname" placeholder="John">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="mail">Votre Email : </label>
+                    <input type="email" class="form-control" name="EMail" id="mail" placeholder="johndoe@example.com">
+                </div>
+                
+                <div class="form-group mt-3">
+                  <label for="msg">Message : </label>
+                  <textarea class="form-control" id="msg" name="msgtext" rows="3"></textarea>
+                </div>
+    
+                <button type="submit" name="submit" class="btn btn-primary mt-3">Envoyer</button>
+                <button type="reset" name="reset" class="btn btn-danger mt-3 ">Reset</button>
+            </form>    
+        </div>
+        
 		<!-- Footer -->
 		<div class="container-fluid footer bg-dark text-center text-white mt-auto">
 			<div class="container d-flex justify-content-center py-2">
