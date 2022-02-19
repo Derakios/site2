@@ -513,3 +513,7 @@ body {
         height: 270px !important;
     }
 }
+
+iframe {
+    border-radius: 2px;
+}
