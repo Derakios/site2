@@ -457,6 +457,8 @@ body {
     display: none;
 }
 
+/* RESPONSIVE DE LA NAVBAR */
+
 @media (max-width: 673px) {
     .nav-item a {
         font-size: 13px;
@@ -472,5 +474,42 @@ body {
 @media (max-width: 578px) {
     .nav-item a {
         font-size: 10px;
+    }
+}
+
+/* CSS DE LA CARTE CELESTE POUR RESPONSIVE */
+
+@media (max-width: 991px) {
+    #celestial-map canvas {
+        width: 600px !important;
+        height: 600px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #celestial-map canvas {
+        width: 500px !important;
+        height: 500px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    #celestial-map canvas {
+        width: 400px !important;
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 435px) {
+    #celestial-map canvas {
+        width: 350px !important;
+        height: 350px !important;
+    }
+}
+
+@media (max-width: 385px) {
+    #celestial-map canvas {
+        width: 270px !important;
+        height: 270px !important;
     }
 }
