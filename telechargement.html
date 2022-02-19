@@ -58,32 +58,51 @@
 			</div>
 		</nav>
 
-        <p class="titleDown"> Rubrique téléchargement </p>
+		<div class="d-flex justify-content-center mt-3 mb-3">
+			<div class="row">
+				<h3 class=""> Rubrique téléchargement </h3>
+			</div>
+		</div>
 
-        <div class="downloadDiv">
-
-            <ul>
-                <li><a class="downloadExe" href="telechargement/PlanetAnim.exe"> Animation des planètes en 3D </a>
-                    <p class="textDownload">Une petite animation qui met en place les planètes du système solaire. Les planètes sont entièrement
-                        texturées et animées, et on peut arrêter/redémarrer l'animation, afficher ou masquer les étoiles, afficher
-                        ou masquer les informations, et enfin hoisir entre une interface en fançais ou en anglais. Les sources
-                        permettent d'ajouter facilement d'autres langues...
-                    </p>
-                </li>
-
-                <li><a class="downloadExe" href="telechargement/orbit.exe"> Programme de calcul d'éléments orbitaux </a>
-                    <p class="textDownload">Le logiciel Orbit 2.1 permet de calculer les éléments orbitaux des corps ayant une orbite autour du Soleil.
-                        La méthode de Gauss générale est utilisée pour établir une orbite préliminaire. Il dresse ensuite une
-                        éphéméride et calcule les écarts observation-calcul. Ces écarts peuvent être minimisés par la méthode des
-                        moindres carrés, afin que l'orbite satisfasse le mieux possible l'ensemble des observations. Cet ajustement
-                        permet notamment de prendre en compte l'influencegravitationnelle des planètes. Une fois l'orbite finale
-                        obtenue, il est possible d'enregistrer les éléments orbitaux dans un fichier texte et de dresser une
-                        éphéméride du corps.
-                    </p>
-                </li>
-            </ul>
-
-        </div>
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Animation des planètes en 3D
+				</button>
+			  </h2>
+			  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					Une petite animation qui met en place les planètes du système solaire. Les planètes sont entièrement
+					texturées et animées, et on peut arrêter/redémarrer l'animation, afficher ou masquer les étoiles, afficher
+					ou masquer les informations, et enfin hoisir entre une interface en fançais ou en anglais. Les sources
+					permettent d'ajouter facilement d'autres langues...
+					<br>
+					<button type="button" class="btn btn-outline-dark mt-3" onclick="window.location='telechargement/PlanetAnim.exe'">Télécharger</button>
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="headingTwo">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Programme de calcul d'éléments orbitaux 
+				</button>
+			  </h2>
+			  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					Le logiciel Orbit 2.1 permet de calculer les éléments orbitaux des corps ayant une orbite autour du Soleil.
+					La méthode de Gauss générale est utilisée pour établir une orbite préliminaire. Il dresse ensuite une
+					éphéméride et calcule les écarts observation-calcul. Ces écarts peuvent être minimisés par la méthode des
+					moindres carrés, afin que l'orbite satisfasse le mieux possible l'ensemble des observations. Cet ajustement
+					permet notamment de prendre en compte l'influencegravitationnelle des planètes. Une fois l'orbite finale
+					obtenue, il est possible d'enregistrer les éléments orbitaux dans un fichier texte et de dresser une
+					éphéméride du corps.
+					<br>
+					<button type="button" class="btn btn-outline-dark mt-3" onclick="window.location='telechargement/orbit.exe'">Télécharger</button>
+				</div>
+			  </div>
+			</div>
+		</div>
 		
 		<!-- Footer -->
 		<div class="container-fluid footer bg-dark text-center text-white mt-auto">
