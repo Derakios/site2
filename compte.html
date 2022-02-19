@@ -58,32 +58,24 @@
 			</div>
 		</nav>
 
-		<div class="divCompte">
+		<div class="container col-md-12 mt-5">
 			<p class="redTextCompte">Veuillez saisir votre login et votre mot de passe : </p>
 
-			<form class="formCo" name="form" action="auth.php" method="POST" enctype="text/plain" onsubmit="return validateAccount()">
-				
-				<div class="div1positionCo">
-					<label for id="nom">login :</label>
-					<input class="inputLoginCo" type="text" name="login"/>
+			<form name="form" action="auth.php" method="POST" enctype="text/plain" onsubmit="return validateAccount()">
+				<div class="form-group">
+					  <label for="login">Identifiant : </label>
+					  <input type="text" class="form-control" id="login" placeholder="Identifiant">
 				</div>
-				
-
-				<br>
-
-				<div class="div2positionCo">
-					<label for id="pass">mot de passe :</label>
-					<input class="inputMdpCo" type="text" name="pwd"/>
+				<div class="form-group mt-3">
+					  <label for="pwd">Mot de passe : </label>
+					  <input type="password" class="form-control" id="pwd" placeholder="Mot de passe">
 				</div>
-
-				<br>
-
-				<div class="divBtnCo">
-					<input type="reset" name="reset" value="Effacer" />
-					<input type="submit" name="submit" value="Valider" />
-				</div>
+				<button type="submit" name="submit" class="btn btn-primary mt-3">Valider</button>
 			</form>
 		</div>
+		
+
+		
 		
 		
 		<!-- Footer -->
